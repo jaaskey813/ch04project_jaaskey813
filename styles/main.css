@@ -1,1 +1,62 @@
+Johnathon-Askey-9/13/2026
 
+body {
+    display: grid;
+}
+
+#image-flex {
+    display: flex;
+}
+
+img {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+    #image-flex figure {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #image-flex figure {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 5px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
